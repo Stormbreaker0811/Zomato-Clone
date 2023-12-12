@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "zomato-clone-angular"
+  },
+  "targets": {
+    "zomato-clone-angular": {
+      "hosting": {
+        "zomato-clone": [
+          "zomato-clone-angular"
+        ]
+      }
+    }
+  }
+}

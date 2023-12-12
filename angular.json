@@ -25,6 +25,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
             "scripts": [],
@@ -93,8 +94,28 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "zomato-clone:build:production",
+              "serveTarget": "zomato-clone:serve:production"
+            },
+            "development": {
+              "buildTarget": "zomato-clone:build:development",
+              "serveTarget": "zomato-clone:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "9e179085-cd21-4619-b11f-a5c70a8ba0b5"
   }
 }
