@@ -4,6 +4,7 @@ import player from 'lottie-web';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { MatButtonModule } from "@angular/material/button";
+import { Firestore } from '@angular/fire/firestore';
 
 
 @Component({
@@ -14,5 +15,10 @@ import { MatButtonModule } from "@angular/material/button";
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+  constructor(private firestore : Firestore) {
+    this.firestore = firestore;
+  };
+  fetchFormData() : void{
 
+  }
 }
